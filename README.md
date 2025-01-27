@@ -34,8 +34,8 @@ The project follows a modular approach:
 ### Steps to Run
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/neurotalk.git
-   cd neurotalk
+   git clone https://github.com/kafi-anan-rafi/neuro-talk
+   cd neuro-talk
    ```
 
 2. **Install Dependencies**:
@@ -50,7 +50,7 @@ The project follows a modular approach:
 3. **Set Up Environment Variables**:
    Create a `.env` file in the root directory and add your Google Generative AI API key:
    ```env
-   REACT_APP_AI_API_KEY=your-google-generative-ai-api-key
+   NEXT_PUBLIC_API_KEY=your-google-generative-ai-api-key
    ```
 
 4. **Start the Development Server**:
