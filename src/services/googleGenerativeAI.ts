@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export async function generateAIResponse(prompt: string): Promise<string> {
-  const apiKey = process.env.API_KEY || "";
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY || "";
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
@@ -14,6 +14,7 @@ export async function generateAIResponse(prompt: string): Promise<string> {
     }
   } catch (error) {
     console.error("Error generating content:", error);
+    console.log(apiKey);
     return "Error generating response";
   }
 }
